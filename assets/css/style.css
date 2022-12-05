@@ -19,6 +19,9 @@
 /*Akhir ScrollBar */
 /* Root */
 
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -314,7 +317,7 @@ color: #FFFFFF;
   padding: 40px 35px;
   /* padding-left: 25px;
   padding-right: 25px; */
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.4s;
   border: 1px solid;
@@ -397,3 +400,132 @@ color: #FFFFFF;
 }
 
 /* Akhir Card */
+
+/* awal bottom */
+.bottom {
+  align-items: center;
+position: absolute;
+width: 100%;
+height: 660px;
+left: 0px;
+top: 1450px;
+color:white;
+background-color : #1E56A0;
+}
+
+.tulisan-bottom {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 61px;
+text-align: center;
+color: #FFFFFF;
+margin-top:50px;
+}
+.bottom-a {
+  align-items: center;
+  text-align: center;
+  display: flex;
+/* flex-direction: row; */
+justify-content: center;
+position: relative;
+/* padding: 237px 70px; */
+gap: 132px;
+margin-top: 20px;
+
+
+
+}
+
+.bottom-b {
+  margin-top: 75px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* akhir bottom */
+
+/* awal footer */
+footer {
+  
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  left: 0px;
+  top: 2110px;
+  
+  background: #000;
+  }
+  .f-container {
+    /* margin: 92px 193px 92px 193px; */
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 135px;
+  
+  }
+  
+  .f-kiri {
+    float: left;
+  }
+  
+  .f-img {
+    margin-top: 90px;
+    margin-left :194px;
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 0px;
+  
+  }
+  
+
+  .f-p-kiri {
+    margin-top: 120px;
+  margin-left :194px;
+    position: absolute;
+  width: 464px;
+  
+  left: 20px;
+  top: 94px;
+  
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 33px;
+  
+  color: #FFFFFF;
+  }
+  
+
+  .footer-kanan {
+   
+ 
+  
+  }
+
+  .f-p-kanan {
+    margin-right: 50px;
+    color:white;
+    margin-top: 120px;
+  margin-bottom: 92px;
+  margin-left: 813px;
+  margin-right: 193px;
+  font-size: 30px;
+    font-weight: bold;
+  }
+  .bawah {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 390px;
+    font-size: 20px;
+    color:#fff;
+    text-decoration: none;
+  }
+
+
+
+/* akhir footer */
