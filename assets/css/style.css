@@ -1,3 +1,24 @@
+/* ScrollBar*/
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #1E56A0;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #163172;
+  }
+
+/*Akhir ScrollBar */
+/* Root */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +27,10 @@
   }
   
   body {
-    font-family: 'Work Sans', sans-serif;
-    background-color: #FEFEFE;
+    font-family: 'Poppins';
+    background-color: #F6F6F6;
   }
-
+/* Akhir Root */
 /* Navbar */
 
   .burger {
@@ -177,3 +198,98 @@
   }
 
 /* Akhir Navbar */
+
+/* Header */
+
+/* AutoLayout */
+.h-container {
+display:block;
+flex-direction: column;
+align-items: flex-start;
+padding: 90px 58px;
+
+position: relative;
+width: 100%;
+height: 600px;
+left: 0px;
+
+
+background: #163172;
+}
+
+.column {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.tulisan-header {
+  width: 761px;
+height: 105px;
+font-style: normal;
+font-weight: 600;
+font-size: 37px;
+line-height: 56px;
+
+color: #FFFFFF;
+
+}
+
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #fff;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #163172;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 200px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: 'Poppins';
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+/* Akhir Header */
