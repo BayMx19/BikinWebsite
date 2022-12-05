@@ -203,7 +203,7 @@
 
 /* AutoLayout */
 .h-container {
-display:block;
+/* display:block; */
 flex-direction: column;
 align-items: flex-start;
 padding: 90px 58px;
@@ -293,3 +293,107 @@ color: #FFFFFF;
   color: rgba(0, 0, 0, .3);
 }
 /* Akhir Header */
+
+/* Card */
+
+.judul{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: xx-large;
+}
+
+.container-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+}
+.item {
+  background: #163172;
+  padding: 40px 35px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+  border: 1px solid;
+
+  background-color: #163172;
+}
+.item i {
+  color: #000;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.item h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.item h2,h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+/* .item p {
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+} */
+.item:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 30px 0px #1E56A0;
+}
+
+.buttoncard {
+  align-items: center;
+  background-color: #fff;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #163172;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 250px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: 'Poppins';
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.buttoncard:hover,
+.buttoncard:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.buttoncard:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.buttoncard:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+/* Akhir Card */
